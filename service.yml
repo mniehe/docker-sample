@@ -3,11 +3,11 @@ apiVersion: v1
 metadata:
   name: whoami
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: whoami
   ports:
   - protocol: TCP
     name: http
     port: 8080
-    targetPort: 8080
+    targetPort: 8000

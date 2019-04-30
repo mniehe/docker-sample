@@ -20,3 +20,7 @@ spec:
         env:
         - name: ENV_NAME
           value: "value"
+        ports:
+          - name: http
+            containerPort: 8000
+            protocol: TCP
